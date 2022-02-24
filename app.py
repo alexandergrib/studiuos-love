@@ -16,6 +16,8 @@ app.secret_key = os.environ.get("SECRET_KEY")
 def home():
     return render_template("index.html", index_page=True)
 
+# test test
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get("IP"),
