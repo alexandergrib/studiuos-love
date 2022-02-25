@@ -8,7 +8,7 @@ dbus-python==1.2.16
 dulwich==0.19.15
 fastimport==0.9.8
 Flask==2.0.3
-idna==2.8
+Flask-PyMongo==2.3.0
 itsdangerous==2.1.0
 Jinja2==3.0.3
 MarkupSafe==2.1.0
@@ -20,3 +20,4 @@ requests-unixsocket==0.2.0
 six==1.14.0
 urllib3==1.25.8
 Werkzeug==2.0.3
+pymongo==4.0.1
