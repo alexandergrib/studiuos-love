@@ -59,7 +59,7 @@ def login():
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                     request.form.get("username")))
-                return redirect(url_for("index"))
+                return redirect(url_for("home"))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -70,6 +70,7 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("login.html")
+
 
 @app.route("/logout")
 def logout():
