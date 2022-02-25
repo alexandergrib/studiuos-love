@@ -31,3 +31,13 @@ git rm -r --cached <folder name>
 
 
 pip install "pymongo[srv]"
+
+git pull origin main
+
+
+
+pip3 install flask
+pip3 install pymongo
+pip3 install Flask-PyMongo
+pip3 install Werkzeug
+python3 -m pip install "pymongo[srv]"
