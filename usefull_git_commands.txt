@@ -1,0 +1,33 @@
+git add .
+git commit -m "commit message"
+git push
+
+#  to create and checkout new branch
+git checkout -b <new branch name>
+#  to checkout existing branch
+git checkout <new branch name>
+
+
+
+git checkout master
+git pull --rebase
+git checkout Mybranch
+git rebase master
+git push -f origin Mybranch
+git fetch
+git rebase origin/dev
+
+git pull origin master --allow-unrelated-histories
+
+#To add new origin
+ git remote add origin https://github.com/user/repo.git
+
+# Verify new remote URL
+ git remote -v
+
+#To untrack folder
+git rm -r --cached <folder name>
+
+
+
+pip install "pymongo[srv]"
