@@ -5,6 +5,35 @@ footer{
     background-color: #871D39;
     vertical-align:middle;
     padding-top: 20px;
+body, html {
+    height: 100%;
+    margin: 0;
+}
+  
+.masthead {
+    /* background-image: url("../static/img/heart-cookies.jpg"); */
+    height: 70%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead {
+    width: 100%;
+    height: 50%;
+}
+
+
+footer{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
 footer ul {
     list-style-type: none;
