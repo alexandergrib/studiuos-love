@@ -2,4 +2,4 @@ flask >=2
 pymongo >=4
 Flask-PyMongo >=2
 Werkzeug>=2
-
+pymongo[srv]>=4
