@@ -1,29 +1,28 @@
-/*                  footer              */
-footer{   
-    
-    text-align: center;
-    background-color: #871D39;
-    vertical-align:middle;
-    padding-top: 20px;
 body, html {
     height: 100%;
     margin: 0;
 }
+
+body {
+    background-color: #ece5de;
+}
+
+#topnav {
+    background-color: #871d39;
+}
+
+.nav-item a, .navbar a {
+    color: #faf2f0;
+}
   
 .masthead {
     /* background-image: url("../static/img/heart-cookies.jpg"); */
-    height: 70%;
+    height: 50%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.masthead {
-    width: 100%;
-    height: 50%;
-}
-
 
 footer{
     position: fixed;
@@ -34,13 +33,21 @@ footer{
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
+    background-color: #871D39;
+    vertical-align:middle;
+    padding-top: 20px;
 }
+
 footer ul {
     list-style-type: none;
     text-align: center;   
     font-size: 0px;
     margin: 0px;
     padding: 0px;
+}
+
+li:hover {
+    transform: translateY(-5px) scale(1.05);
 }
 
 footer li {

@@ -28,7 +28,6 @@ def index():
 def love_facts():
     return render_template("love_facts.html")
 
-
 @app.route("/topten")
 def topten():
     return render_template("topten.html")
