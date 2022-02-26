@@ -26,14 +26,6 @@ def index():
 def love_facts():
     return render_template("love_facts.html")
 
-@app.route("/poetry")
-def poetry():
-    return render_template("poetry.html")
-
-@app.route("/top_ten")
-def top_ten():
-    return render_template("top_ten.html")
-
 @app.route("/topten")
 def top_ten():
     return render_template("topten.html")
