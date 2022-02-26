@@ -29,7 +29,7 @@ body {
 
 
 /*      masthead images      */
-  
+
 .masthead {
     /* background-image: url("../static/img/heart-cookies.jpg"); */
     height: 50%;
@@ -52,30 +52,64 @@ body {
 
 /*      dating apps      */
 
-.row{
+.row {
     --bs-gutter-x: 1rem !important;
     margin: 0px !important;
 }
-#datingApps{
+
+#datingApps {
     background-color: #ECE5DE;
     text-align: center;
     padding: 35px 0px;
     display: block;
-   
-}
-#datingApps h3{
-    margin: 20px 0;
-}
-#datingApps img{
-    margin: 30px 0;
-    border-radius: 10px;
-   
+
 }
 
+#datingApps h3 {
+    margin: 20px 0;
+}
+
+#datingApps img {
+    margin: 30px 0;
+    border-radius: 10px;
+
+}
+
+
+/*    Bootstrap carousel     */
+.text-end {
+    text-align: end;
+}
+
+.inner_item {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel_title {
+    margin-top: 10px;
+    text-align: justify;
+}
+.text-uppercase {
+     text-transform: uppercase;
+}
+.text-end {
+    text-align: end !important;
+}
+.poem_body {
+
+    text-align: justify;
+    margin: 10px auto 0;
+    min-height: 250px;
+}
+
+.copyright_wrapper {
+    text-align: end;
+}
 
 /*      footer      */
 
-footer{
+footer {
     position: relative;
     max-height: 100%;
     height: 55px;
@@ -86,13 +120,13 @@ footer{
     right: 0px;
     margin-bottom: 0px;
     background-color: #871D39;
-    vertical-align:middle;
+    vertical-align: middle;
     padding-top: 10px;
 }
 
 footer ul {
     list-style-type: none;
-    text-align: center;   
+    text-align: center;
     font-size: 0px;
     margin: 0px;
     padding: 0px;
@@ -104,14 +138,15 @@ li:hover {
 
 footer li {
     display: inline;
-    margin: 0 10px;   
-    font-size: 1.5rem;   
+    margin: 0 10px;
+    font-size: 1.5rem;
 }
+
 footer p {
     font-size: 1rem;
     font-weight: 900;
     padding-top: 5px;
-    text-align: center;  
+    text-align: center;
     color: #ECE5DE;
 }
 
@@ -119,28 +154,32 @@ footer i {
     color: #ECE5DE;
 }
 
-footer li:hover i{
+footer li:hover i {
     color: black;
 }
+
 /*           Top Arrow              */
 #arrow {
     position: fixed;
     bottom: 125px;
     right: 10px;
     width: 40px;
-    height: 40px;      
+    height: 40px;
     opacity: 0.7;
     transform: rotate(180deg);
 }
+
 #arrow a {
     display: block;
     width: 100%;
     height: 100%;
 }
+
 #arrow:hover {
     opacity: 1;
 }
-.fa-heart{
+
+.fa-heart {
     color: #B02B1A;
     font-size: 2.5rem;
 }
