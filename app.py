@@ -18,32 +18,38 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
+
 @app.route("/")
 def index():
     return render_template("index.html", index_page=True)
+
 
 @app.route("/love_facts")
 def love_facts():
     return render_template("love_facts.html")
 
-@app.route("/poetry")
-def poetry():
-    return render_template("poetry.html")
-
-@app.route("/top_ten")
-def top_ten():
-    return render_template("top_ten.html")
 
 @app.route("/topten")
-def top_ten():
+def topten():
     return render_template("topten.html")
 
 
-@app.route("/poems")
-def poems():
+@app.route("/poetry", methods=['GET', 'POST'])
+def poetry():
     poem_list = list(mongo.db.poetry.find())
+    if request.method == "POST":
+        submit = {
+            "title": request.form.get("title"),
+            "author": request.form.get("author"),
+            "text": request.form.get("text"),
+            "copyright": request.form.get("copyright")
+        }
 
-
+        flash_text = "{} Successfully Created".format(
+            submit["title"])
+        flash(flash_text)
+        # mongo.db.poetry.insert_one(submit)
+        flash('flash_text')
 
     return render_template("poems.html", poem_list=poem_list)
 
@@ -66,7 +72,7 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-        return redirect(url_for("home"))
+        return redirect(url_for("index"))
 
     return render_template("register.html")
 
@@ -84,7 +90,7 @@ def login():
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                     request.form.get("username")))
-                return redirect(url_for("home"))
+                return redirect(url_for("index"))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -102,7 +108,7 @@ def logout():
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
-    return redirect(url_for("home"))
+    return redirect(url_for("index"))
 
 
 if __name__ == '__main__':

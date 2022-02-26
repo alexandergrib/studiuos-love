@@ -1,4 +1,10 @@
+{% extends "base.html" %}
+
 {% block title %}
+    <title>Top Ten</title>
+{% endblock %}
+
+{% block content %}
     <div class="poems-block">
         <ul>
             {% for poem in poem_list %}
@@ -12,15 +18,26 @@
                         {% endif %}
                     </ul>
                 </li>
-
             {% endfor %}
-
         </ul>
-
-
     </div>
-{% endblock %}
 
-{% block content %}
-    <title>Top Ten</title>
+    {% if session.user %}
+        <a href="">add new poem</a>
+
+        <form action="{{ url_for('poetry') }}" method="post">
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author">
+            <br>
+            <label for="title"> Poem Title</label>
+            <input type="text" name="title" id="title">
+            <br>
+            <label for="textarea">Poem</label>
+            <textarea id="textarea" name="text" cols="50"></textarea>
+            <br>
+            <input type="submit">
+        </form>
+
+
+    {% endif %}
 {% endblock %}
