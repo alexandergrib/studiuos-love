@@ -1,0 +1,26 @@
+{% block title %}
+    <div class="poems-block">
+        <ul>
+            {% for poem in poem_list %}
+                <li>
+                    <ul>
+                        <li> {{ poem.title }}</li>
+                        <li>By: {{ poem.author }}</li>
+                        <li><p>{{ poem.text }}</p></li>
+                        {% if poem.copyright %}
+                            <li><span>{{ poem.copyright }}</span></li>
+                        {% endif %}
+                    </ul>
+                </li>
+
+            {% endfor %}
+
+        </ul>
+
+
+    </div>
+{% endblock %}
+
+{% block content %}
+    <title>Top Ten</title>
+{% endblock %}

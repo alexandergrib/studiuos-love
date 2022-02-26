@@ -23,6 +23,20 @@ def home():
     return render_template("index.html", index_page=True)
 
 
+@app.route("/topten")
+def top_ten():
+    return render_template("topten.html")
+
+
+@app.route("/poems")
+def poems():
+    poem_list = list(mongo.db.poetry.find())
+
+
+
+    return render_template("poems.html", poem_list=poem_list)
+
+
 # User section Login Logout Profile------------------------
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -83,4 +97,4 @@ def logout():
 if __name__ == '__main__':
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=False)
+            debug=True)
