@@ -38,13 +38,13 @@
     <!-- flash messages -->
     <div class="messages_block">
         {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        {% for message in messages %}
-        <div class="flashes">
-            <span class="">{{ message }}</span>
-        </div>
-        {% endfor %}
-        {% endif %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="flashes">
+                        <span class="">{{ message }}</span>
+                    </div>
+                {% endfor %}
+            {% endif %}
         {% endwith %}
     </div>
 
@@ -71,7 +71,7 @@
                             <a class="nav-link" href="{{ url_for('poems') }}">Poetry</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('top_ten') }}">Top Ten</a>
+                            <a class="nav-link" href="{{ url_for('topten') }}">Top Ten</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Gift Ideas</a>
@@ -85,6 +85,10 @@
     {% block header %}
     {% endblock %}
 
+<body>
+
+    {% set image_link =  url_for('static', filename='img/heart-cookies.jpg')  -%}
+    <header class="masthead" style="background-image: url('{{image_link}}'); width: 100%; height: 50%;">
     <!-- flash messages -->
     <div class="messages_block">
         {% with messages = get_flashed_messages() %}
