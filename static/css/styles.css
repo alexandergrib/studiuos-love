@@ -49,6 +49,18 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
+.justify-right {
+    text-align: right;
+
+}
+
+
+/*      cards and carousels      */
+.card_image_1 {
+    align-items: flex-end;
+    height: fit-content;
+}
+
 
 /*      dating apps      */
 
