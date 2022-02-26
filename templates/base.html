@@ -29,10 +29,55 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-{% block title %}
+    {% block title %}
     <title>Document</title>
-{% endblock %}
+    {% endblock %}
 </head>
+
+<header class="container-fluid fixed-top">
+    <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+        <!-- Logo -->
+        <div>
+
+        </div>
+        <!-- Nav links -->
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Love Studious</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Love History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Poetry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top Ten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gift Ideas</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Login/Register -->
+        <div>
+            
+        </div>
+    </div>
+
+</header>
 
 <body>
     <!-- flash messages -->
