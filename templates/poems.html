@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+
 {% block title %}
     <title>Top Ten</title>
 {% endblock %}
@@ -23,23 +25,17 @@
     {% if session.user %}
         <a href="">add new poem</a>
 
-        <form action="">
-        <label for="">
-            Author
-            <input type="text" name="author">
-        </label>
-        <br>
-        <label for="">
-            Poem Title
-            <input type="text" name="title">
-        </label>
-        <br>
-
-        <label for="textarea"></label>
-
-        <textarea id="textarea" name="text">
-        </textarea>
-
+        <form action="{{ url_for('poetry') }}" method="post">
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author">
+            <br>
+            <label for="title"> Poem Title</label>
+            <input type="text" name="title" id="title">
+            <br>
+            <label for="textarea">Poem</label>
+            <textarea id="textarea" name="text" cols="50"></textarea>
+            <br>
+            <input type="submit">
         </form>
 
 
