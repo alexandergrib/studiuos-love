@@ -35,6 +35,19 @@
 </head>
 
 <body>
+    <!-- flash messages -->
+    <div class="messages_block">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="flashes">
+            <span class="">{{ message }}</span>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <!-- Nav links -->
         <div>
@@ -49,16 +62,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Love History</a>
+                            <a class="nav-link" href="{{ url_for('love_facts') }}">Love Facts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Poetry</a>
+                            <a class="nav-link" href="{{ url_for('poetry') }}">Poetry</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Top Ten</a>
+                            <a class="nav-link" href="{{ url_for('top_ten') }}">Top Ten</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Gift Ideas</a>
@@ -69,9 +82,8 @@
         </div>
     </div>
 
-    <header class="masthead" style="background-image: url('../static/img/hanging-hearts.jpg')">
-        
-    </header>
+    {% block header %}
+    {% endblock %}
 
     <!-- flash messages -->
     <div class="messages_block">

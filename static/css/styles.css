@@ -1,9 +1,14 @@
-header.masthead {
-    margin-bottom: 50px;
-    background: no-repeat center center;
-    background-color: #868e96;
-    background-attachment: scroll;
-    position: relative;
+body, html {
+    height: 100%;
+    margin: 0;
+}
+  
+.masthead {
+    /* background-image: url("../static/img/heart-cookies.jpg"); */
+    height: 70%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
