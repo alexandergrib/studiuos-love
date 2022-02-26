@@ -67,7 +67,7 @@
                     </button>
                 </div>
 
-                <div class="col justify-content-md-right collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="col justify-content-md-center collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto center">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('love_facts') }}">Love Facts</a>
@@ -84,7 +84,7 @@
                     </ul>
                 </div>
 
-                <div class="col justify-content-md-center login">
+                <div class="col justify-right login">
                     {% if session.user %}
                     <a href="{{ url_for('logout') }}">Logout</a>
                     {% else %}
