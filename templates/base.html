@@ -34,17 +34,17 @@
     {% endblock %}
 </head>
 
-<body>
+<body id="top">
     <!-- flash messages -->
     <div class="messages_block">
         {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="flashes">
-                        <span class="">{{ message }}</span>
-                    </div>
-                {% endfor %}
-            {% endif %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="flashes">
+            <span class="">{{ message }}</span>
+        </div>
+        {% endfor %}
+        {% endif %}
         {% endwith %}
     </div>
 
@@ -56,8 +56,8 @@
                 <div>
                     <a class="navbar-brand" href="{{ url_for('index') }}">Studio Love</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -81,16 +81,16 @@
 
                 <div class="login">
                     {% if session.user %}
-                        <a href="{{ url_for('logout') }}">Logout</a>
+                    <a href="{{ url_for('logout') }}">Logout</a>
                     {% else %}
-                        <a href="{{ url_for('login') }}">login</a>
-                        <a href="{{ url_for('register') }}">Register</a>
+                    <a href="{{ url_for('login') }}">login</a>
+                    <a href="{{ url_for('register') }}">Register</a>
                     {% endif %}
                 </div>
             </nav>
         </div>
     </div>
-        
+
     {% block header %}
     {% endblock %}
 
@@ -141,6 +141,7 @@
 
     <!--               End Dating Apps                             -->
 
+    <div id="arrow"><a href="#top"><i class="fas fa-heart"></i></a></div>
     <!--                footer                     -->
 
     <footer>
