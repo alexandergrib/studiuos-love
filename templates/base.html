@@ -27,8 +27,9 @@
 
     <!-- Local stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-
+{% block title %}
     <title>Document</title>
+{% endblock %}
 </head>
 <body>
 <!-- flash messages -->
