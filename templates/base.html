@@ -19,6 +19,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -53,7 +58,7 @@
         <!-- Nav links -->
         <div>
             <nav class="navbar navbar-expand-lg">
-                <div>
+                <div class="col">
                     <a class="navbar-brand" href="{{ url_for('index') }}">Studio Love</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -62,8 +67,8 @@
                     </button>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                <div class="col justify-content-md-right collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto center">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('love_facts') }}">Love Facts</a>
                         </li>
@@ -79,7 +84,7 @@
                     </ul>
                 </div>
 
-                <div class="login">
+                <div class="col justify-content-md-center login">
                     {% if session.user %}
                         <a href="{{ url_for('logout') }}">Logout</a>
                     {% else %}
