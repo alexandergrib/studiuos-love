@@ -1,3 +1,10 @@
+/*                  footer              */
+footer{   
+    
+    text-align: center;
+    background-color: #871D39;
+    vertical-align:middle;
+    padding-top: 20px;
 body, html {
     height: 100%;
     margin: 0;
@@ -30,33 +37,48 @@ footer{
 }
 footer ul {
     list-style-type: none;
-    text-align: center;
-   
+    text-align: center;   
     font-size: 0px;
     margin: 0px;
     padding: 0px;
 }
-li:hover {
-    transform: translateY(-5px) scale(1.05);
-}
 
 footer li {
     display: inline;
-    margin: 0 10px;
-   
-    font-size: 2rem;
-   
+    margin: 0 10px;   
+    font-size: 2rem;   
 }
-
 footer p {
     font-size: 1.5rem;
     font-weight: 900;
     padding-top: 5px;
     text-align: center;  
-   
-    
+    color: #ECE5DE;
 }
-
 footer i {
-    color: var(--dark-green);
+    color: #ECE5DE;
+}
+footer li:hover i{
+    color: black;
+}
+/*                      Dating Apps              */
+
+.row{
+    --bs-gutter-x: 1rem !important;
+    margin: 0px !important;
+}
+#datingApps{
+    background-color: #ECE5DE;
+    text-align: center;
+    padding: 35px 0px;
+    display: block;
+   
+}
+#datingApps h3{
+    margin: 20px 0;
+}
+#datingApps img{
+    margin: 30px 0;
+    border-radius: 10px;
+   
 }
