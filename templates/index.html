@@ -13,12 +13,4 @@
     hello {{ session.user }}
 </h1>
 
-
-
-    {% if session.user %}
-        <a href="{{ url_for('logout') }}">Logout</a>
-    {% else %}
-        <a href="{{ url_for('login') }}">login</a>
-        <a href="{{ url_for('register') }}">Register</a>
-    {% endif %}
 {% endblock %}
