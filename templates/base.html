@@ -26,6 +26,8 @@
         crossorigin="anonymous"></script>
 
     <!-- Local stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block title %}
     <title>Document</title>
@@ -50,7 +52,50 @@
         {% block content %}
         {% endblock %}
     </div>
+    <!--                Start of the footer                     -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                        <li><a href="https://github.com/EricGaona" target="_blank" rel="noopener"
+                                aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noopener"
+                                aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noopener"
+                                aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noopener"
+                                aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noopener"
+                                aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <p>Studio Love</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                                aria-label="Click here to go to our facebook page"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                                aria-label="Click here to go to our twitter page"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                                aria-label="Click here to go to our instagram page"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+    </footer>
+    <!--                End of the footer                     -->
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
