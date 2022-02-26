@@ -19,7 +19,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 @app.route("/")
-def home():
+def index():
     return render_template("index.html", index_page=True)
 
 
@@ -55,7 +55,7 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-        return redirect(url_for("home"))
+        return redirect(url_for("index"))
 
     return render_template("register.html")
 
@@ -73,7 +73,7 @@ def login():
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                     request.form.get("username")))
-                return redirect(url_for("home"))
+                return redirect(url_for("index"))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -91,7 +91,7 @@ def logout():
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
-    return redirect(url_for("home"))
+    return redirect(url_for("index"))
 
 
 if __name__ == '__main__':

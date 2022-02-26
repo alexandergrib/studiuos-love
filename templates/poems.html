@@ -1,4 +1,8 @@
 {% block title %}
+    <title>Top Ten</title>
+{% endblock %}
+
+{% block content %}
     <div class="poems-block">
         <ul>
             {% for poem in poem_list %}
@@ -12,15 +16,32 @@
                         {% endif %}
                     </ul>
                 </li>
-
             {% endfor %}
-
         </ul>
-
-
     </div>
-{% endblock %}
 
-{% block content %}
-    <title>Top Ten</title>
+    {% if session.user %}
+        <a href="">add new poem</a>
+
+        <form action="">
+        <label for="">
+            Author
+            <input type="text" name="author">
+        </label>
+        <br>
+        <label for="">
+            Poem Title
+            <input type="text" name="title">
+        </label>
+        <br>
+
+        <label for="textarea"></label>
+
+        <textarea id="textarea" name="text">
+        </textarea>
+
+        </form>
+
+
+    {% endif %}
 {% endblock %}
