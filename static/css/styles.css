@@ -1,0 +1,39 @@
+
+footer{
+   
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    text-align: center;
+   
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+li:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+   
+    font-size: 2rem;
+   
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-top: 5px;
+    text-align: center;  
+   
+    
+}
+
+footer i {
+    color: var(--dark-green);
+}
