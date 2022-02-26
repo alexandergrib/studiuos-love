@@ -1,9 +1,21 @@
+header.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+}
 
 footer{
-   
+    position: fixed;
     height: 100px;
     width: 100%;
     text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
 footer ul {
     list-style-type: none;

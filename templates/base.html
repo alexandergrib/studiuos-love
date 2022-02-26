@@ -34,16 +34,12 @@
     {% endblock %}
 </head>
 
-<header class="container-fluid fixed-top">
+<body>
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-        <!-- Logo -->
-        <div>
-
-        </div>
         <!-- Nav links -->
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">Love Studious</a>
+                <a class="navbar-brand" href="index.html">Studio Love</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -71,15 +67,12 @@
                 </div>
             </nav>
         </div>
-        <!-- Login/Register -->
-        <div>
-            
-        </div>
     </div>
 
-</header>
+    <header class="masthead" style="background-image: url('../static/img/hanging-hearts.jpg')">
+        
+    </header>
 
-<body>
     <!-- flash messages -->
     <div class="messages_block">
         {% with messages = get_flashed_messages() %}
