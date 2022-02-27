@@ -14,6 +14,33 @@
     Welcome {{ session.user }}!
 </h1>
 
+<<<<<<< HEAD
+=======
+<hr>
+
+<div class="row justify-content-md-center">
+    <div class="col card" top-left">
+        <div class="card-body content content-1">
+            <h3>Top 10 Romantic Locations</h3>
+            <p class="large-main-text">Have a look at some of Ireland's most beautiful and romantic spots.</p>
+        </div>
+        {% set card_image_1 = url_for('static', filename='img/couple.jpg') -%}
+        <div class="card-image" id="card_image_1"
+            style="background-image: url('{{card_image_1}}'); width: 100px; height: 100px;"></div>
+    </div>
+    <div class="col card" top-right">
+        {% set card_image_2 = url_for('static', filename='img/bouquet.jpg') -%}
+        <div class="card-image" id="card_image_2"
+            style="background-image: url('{{card_image_1}}'); width: 100px; height: 100px;"></div>
+        <div class="card-body content content-2">
+            <h3>Romantic Poetry</h3>
+            <p class="large-main-text">Check out some amazing poetry that's sure to woo anyone. Why not write your own
+                also!</p>
+        </div>
+    </div>
+</div>
+
+>>>>>>> d4e973e71a5051ee24611d79123f9a08af0b8773
 {% else %}
 
 {% endif %}

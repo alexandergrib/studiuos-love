@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block header %}
-{% set image_link =  url_for('static', filename='img/heart-book.jpg')  -%}
-<header class="masthead" style="background-image: url('{{image_link}}'); width: 100%; height: 50%;">
-    
-</header>
+    {% set image_link =  url_for('static', filename='img/heart-book.jpg') -%}
+    <header class="masthead" style="background-image: url('{{ image_link }}'); width: 100%; height: 50%;">
+
+    </header>
 {% endblock %}
 
 {% block title %}
@@ -12,39 +12,102 @@
 {% endblock %}
 
 {% block content %}
-    <div class="poems-block">
-        <ul>
-            {% for poem in poem_list %}
-                <li>
-                    <ul>
-                        <li> {{ poem.title }}</li>
-                        <li>By: {{ poem.author }}</li>
-                        <li><p>{{ poem.text }}</p></li>
-                        {% if poem.copyright %}
-                            <li><span>{{ poem.copyright }}</span></li>
-                        {% endif %}
-                    </ul>
-                </li>
-            {% endfor %}
-        </ul>
+    <div class="poems-block mt-3">
+        <div class="row">
+            <div class="col">
+                <div id="poems_carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner w-80">
+                        {% for poem in poem_list %}
+                            {% if loop.index0 == 0 %}
+                                <div class="carousel-item active">
+                                    <div class="inner_item">
+                                        <div class="carousel_title">
+                                            <h2 class="text-center text-uppercase">{{ poem.title }}</h2>
+                                            <span class="text-end mt-2">Written by {{ poem.author }}</span>
+                                        </div>
+                                        <div class="poem_body">
+                                            <p>
+                                                {{ poem.text }}
+                                            </p>
+                                        </div>
+                                        {% if poem.copyright %}
+                                            <div class="copyright">
+                                                <div class="copyright_wrapper">
+                                                    <span>Copyright&copy;: </span><span>{{ poem.copyright }}</span>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% else %}
+                                <div class="carousel-item">
+                                    <div class="inner_item">
+                                        <div class="carousel_title">
+                                            <h2 class="text-center text-uppercase">{{ poem.title }}</h2>
+                                            <span class="text-end mt-2">Written by {{ poem.author }}</span>
+                                        </div>
+                                        <div class="poem_body ">
+                                            <p>
+                                                {{ poem.text }}
+                                            </p>
+                                        </div>
+                                        {% if poem.copyright %}
+                                            <div class="copyright">
+                                                <div class="copyright_wrapper">
+                                                    <span class="link" tabindex="0" data-bs-toggle="popover" title="Copyright&copy;" data-bs-trigger="focus" data-bs-content="{{ poem.copyright }}" data-bs-placement="top">Click to see copyright information</span>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#poems_carousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#poems_carousel"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     {% if session.user %}
-        <a href="">add new poem</a>
 
-        <form action="{{ url_for('poetry') }}" method="post">
-            <label for="author">Author</label>
-            <input type="text" name="author" id="author">
-            <br>
-            <label for="title"> Poem Title</label>
-            <input type="text" name="title" id="title">
-            <br>
-            <label for="textarea">Poem</label>
-            <textarea id="textarea" name="text" cols="50"></textarea>
-            <br>
-            <input type="submit">
-        </form>
+        <div class="new-poem_button text-uppercase text-center mt-5">
+            <span class="add-poem">Add new poem</span>
+        </div>
+        <div class="submit_poem input-group mt-2 hide">
+            <form action="{{ url_for('poetry') }}" method="post">
+                <div class="input-group mt-2">
+{#                    <label for="author" class="" >Author</label>#}
+                    <input type="text" name="author" id="author" placeholder="Author" aria-label="Poem Author">
+                </div>
+                <div class="input-group mt-2" >
+{#                    <label for="title" class=""> Poem Title</label>#}
+                    <input type="text" name="title" id="title" placeholder="Poem title" aria-label="Poem title">
+                </div>
+                <div class="input-group mt-2">
+{#                    <label for="textarea" class="">Poem text</label>#}
 
+                    <textarea id="textarea" name="text" cols="50" placeholder="Poem text" aria-label="Textarea for Poem"></textarea>
+                </div>
+                <div class="input-group mt-2">
+                    <input type="text" name="copyright" id="copyright" placeholder="Poem copyright" aria-label="Poem copyright">
+
+                </div>
+                <div class="input-group mt-2">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
 
     {% endif %}
 {% endblock %}
