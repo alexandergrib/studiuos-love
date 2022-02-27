@@ -7,11 +7,14 @@ body, html {
 
 body {
     background-color: #ece5de;
-    margin-bottom: 60px;
 }
 
 .hide {
     display: none;
+}
+
+.messages_block {
+    padding-top: 75px;
 }
 
 
@@ -20,7 +23,8 @@ body {
 #topnav {
     background-color: #871d39;
     width: 100%;
-    position: fixed;
+    height: 75px;
+    position: absolute;
     z-index: 999;
 }
 
@@ -51,7 +55,35 @@ body {
     text-align: center;
     color: #b12b0a;
     margin-top: 20px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', sans-serif;
+}
+
+.lrg-heading {
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: bold;
+    color: #b12b0a;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.med-heading {
+    font-family: 'Roboto', sans-serif;
+    color: #871d39;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.facts-p {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
 }
 
 .justify-right {
@@ -70,24 +102,25 @@ body {
 }
 
 .image-div-1 img { 
-    width: 100%; 
+    width: auto; 
     height: 100%;
 }
 
 .image-div-2 img { 
-    width: 100%; 
+    width: auto; 
     height: 100%;
 }
 
 .image-div {
     display: inline-block; 
-    width: 100%; 
+    width: 200px; 
     height: 150px; 
     overflow: hidden; 
     border-radius: 20px;
     display: flex;
     align-self: flex-end;
     margin-bottom: 30px;
+    margin-right: 30px;
 }
 
 
@@ -143,7 +176,10 @@ body {
 .poem_body {
     text-align: justify;
     margin: 10px auto 0;
+}
 
+.new-poem_button {
+    margin-bottom: 20px;
 }
 
 .copyright_wrapper {
@@ -257,6 +293,7 @@ footer li:hover i {
 
 #carouselExampleControls img{
     max-height: 700px;
+}
 
 /*falling hearts*/
 .falling-hearts {

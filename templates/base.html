@@ -23,7 +23,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -42,19 +42,6 @@
 <!-- <body id="top"> -->
 
 <body>
-    <!-- flash messages -->
-    <div class="messages_block">
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        {% for message in messages %}
-        <div class="flashes">
-            <span class="">{{ message }}</span>
-        </div>
-        {% endfor %}
-        {% endif %}
-        {% endwith %}
-    </div>
-
     <!-- Navbar -->
     <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
         <!-- Nav links -->
@@ -97,6 +84,21 @@
             </nav>
         </div>
     </div>
+
+    <!-- flash messages -->
+    <div class="messages_block">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="flashes">
+            <span class="">{{ message }}</span>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+
+    
 
     {% block header %}
     {% endblock %}
