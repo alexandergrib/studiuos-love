@@ -45,47 +45,46 @@
 
 <body>
     <!-- Navbar -->
-    <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-        <!-- Nav links -->
-        <div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="col">
-                    <a class="navbar-brand" href="{{ url_for('index') }}">Studio Love</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Studio Love</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
 
-                <div class="col justify-content-md-center collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('love_facts') }}">Love Facts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('poetry') }}">Poetry</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('topten') }}">Top Ten</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('gift_ideas') }}">Gift Ideas</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col justify-right login">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('love_facts') }}">Love Facts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('poetry') }}">Poetry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('topten') }}">Top Ten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('gift_ideas') }}">Gift Ideas</a>
+                    </li>
+                    <!-- Login/logout/register -->
                     {% if session.user %}
-                    <a href="{{ url_for('logout') }}">Logout</a>
+                    <li class="nav-item">
+                        <a href="{{ url_for('logout') }}">Logout</a>
+                    </li>
                     {% else %}
-                    <a href="{{ url_for('login') }}">Login / </a>
-                    <a href="{{ url_for('register') }}">Register</a>
+                    <li class="nav-item">
+                    <a href="{{ url_for('login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('register') }}">Register</a>
+                    </li>
                     {% endif %}
-                </div>
-            </nav>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <!-- flash messages -->
     <div class="messages_block">

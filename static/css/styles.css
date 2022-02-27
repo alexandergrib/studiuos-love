@@ -13,16 +13,13 @@ body {
     display: none;
 }
 
-.messages_block {
-    padding-top: 75px;
-}
 .rounded-corners {
     border-radius: 20px;
 }
 
 /*      navbar      */
 
-#topnav {
+nav  {
     background-color: #871d39;
     width: 100%;
     height: 75px;
@@ -34,14 +31,20 @@ body {
     align-items: center;
 }
 
-.nav-item a, .navbar a {
+.logo, .nav-link, .nav-item a {
+    color: #faf2f0;
+}
+
+.navbar-toggler i {
     color: #faf2f0;
 }
 
 .nav-item {
     padding: 0 1em;
-
 }
+
+
+
 
 /*      images      */
 
@@ -103,6 +106,8 @@ body {
 }
 
 .login a {
+    text-decoration: none;
+    color: #faf2f0;
     text-decoration: none;
 }
 
@@ -229,7 +234,7 @@ body {
 
 /*      footer      */
 
-footer {  
+footer {
     text-align: center;
     bottom: 0px;
     left: 0px;
@@ -392,6 +397,10 @@ footer li:hover i {
 }
 
 /* new poems inputs*/
+
+span .add-poem {
+
+}
 
 .submit_poem form {
     margin: 0 auto;
