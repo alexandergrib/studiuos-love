@@ -1,34 +1,82 @@
 {% extends "base.html" %}
+{% block title %}
+<title>Gift Ideas</title>
+{% endblock %}
 
 
 {% block header %}
-    {% set image_link = url_for('static', filename='img/red-rose.jpg') -%}
-    <header class="masthead" style="background-image: url('{{ image_link }}'); width: 100%; height: 50%;">
+{% set image_link = url_for('static', filename='img/red-rose.jpg') -%}
+<header class="masthead" style="background-image: url('{{ image_link }}'); width: 100%; height: 50%;">
 
-    </header>
+</header>
 {% endblock %}
 
 
 {% block content %}
-    <div class="gifts_container">
-        <div class="row mt-2 pt-2">
-            <div class="col text-end">
-                <img src="{{ url_for('static', filename='img/papa_johns_pizza.png') }}"
-                     class="rounded-corners"
-                     alt="Heart shaped pizza"
-                     aria-label="Image of the heart shaped papas john pizza" height="200">
-            </div>
-            <div class="col"><p>Papa Johns heart shaped pizza's</p></div>
-        </div>
-        <hr>
-        <div class="row mb-2 pb-2">
-            <div class="col text-end"><p>Fine Dining Restaurants</p></div>
-            <div class="col">
-                <img src="{{ url_for('static', filename='img/jay-wennington-N_Y88TWmGwA-unsplash.jpg') }}"
-                     class="rounded-corners"
-                     alt="Heart shaped pizza"
-                     aria-label="Image of the heart shaped papas john pizza" height="200">
-            </div>
-        </div>
+<h1 class="lrg-heading">Fantastic Gift Ideas</h1>
+
+<div class="row">
+    <div class="love-facts col-md-7">
+        <h3 class="med-heading left">Papa Johns - Heart-shaped Pizza</h3>
+        <p class="info-p">If you thought the only way to show your love on Valentine's Day was with a heart-shaped box
+            of chocolates, we've got some exciting news! Not only are there are tons of heart-shaped foods that are
+            worth trying this February, but some of them even double as a romantic dinner for two. Just take a look at
+            this adorable heart-shaped pizza by Papa Johns!</p>
     </div>
+    <div class="col-md-5">
+        <img src="{{ url_for('static', filename='img/papa_johns_pizza.png') }}" class="rounded-corners"
+            alt="Heart shaped pizza" aria-label="Image of the heart shaped papas john pizza" height="250">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <img src="{{ url_for('static', filename='img/gits-butlers.jpg') }}" class="rounded-corners"
+            alt="Butlers Chocolate" aria-label="Image of a selection of Butlers Chocolate Products" height="250">
+    </div>
+    <div class="love-facts col-md-7">
+        <h3 class="med-heading right">Butlers Chocolate Box</h3>
+        <p class="info-p">Elegant, thoughtful gifts, carefully curated for the one you love. Founded in 1932, Butlers
+            is Ireland's premier family-owned firm dedicated to the craft of exceptional chocolate making.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="subheader col-md-7">
+        <h3 class="med-heading left">Interflora</h3>
+        <p class="info-p">Who doesn't love a good surprise? Especially when that surprise is a beautiful bouquet of
+            flowers! Send someone you love surprise flowers today because those "just because" moments deserve to be
+            special too!</p>
+    </div>
+    <div class="col-md-5">
+        <img src="{{ url_for('static', filename='img/gits-flowers.jpg') }}" class="rounded-corners"
+            alt="Woman with Bouquet" aria-label="Image of a woman holding a bouquet of flowers" height="250">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <img src="{{ url_for('static', filename='img/presents.jpg') }}" class="rounded-corners" alt="Gifts.ie"
+            aria-label="Image of several wrapped gifts" height="250">
+    </div>
+    <div class="love-facts col-md-7">
+        <h3 class="med-heading right">Butlers Chocolate Box</h3>
+        <p class="info-p">Gifts.ie is Ireland's favourite online gift shop offering a fast and reliable gift delivery
+            service since 2000! Based in Dublin, they are a 100% Irish-owned local business. You'll find a great
+            selection of gifts to choose from</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="love-facts col-md-7">
+        <h3 class="med-heading left">Spa Treatments</h3>
+        <p class="info-p">Are you Valentine's ready? Why not gift your significant other a visit to the spa. In fact,
+            why not make it a date and book a couples package. We could all do with a little pampering!</p>
+    </div>
+    <div class="col-md-5">
+        <img src="{{ url_for('static', filename='img/spa.jpg') }}" class="rounded-corners"
+            alt="Spa massage" aria-label="Image of a woman getting a hot stone massage at the spa" height="250">
+    </div>
+</div>
+
 {% endblock %}
