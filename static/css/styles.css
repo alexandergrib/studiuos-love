@@ -365,3 +365,7 @@ footer li:hover i {
     cursor: pointer;
 
 }
+
+.gifts_container {
+    margin: 0 auto;
+}
