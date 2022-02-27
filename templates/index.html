@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
 {% block header %}
 {% set image_link = url_for('static', filename='img/heart-cookies.jpg') -%}
 <header class="masthead" style="background-image: url('{{image_link}}'); width: 100%; height: 50%;">
