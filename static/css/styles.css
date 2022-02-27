@@ -57,10 +57,19 @@ body {
 }
 
 
-/*      cards and carousels      */
-.card_image_1 {
-    align-items: flex-end;
-    height: fit-content;
+/*      cards      */
+
+.card-image {
+    height: 200px;
+    width: 200px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    border-radius: 50%;
+}
+
+.card-body {
+    width: 60%;
 }
 
 
