@@ -19,6 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +40,9 @@
     {% endblock %}
 </head>
 
-<body id="top">
+<!-- <body id="top"> -->
+
+<body>
     <!-- flash messages -->
     <div class="messages_block">
         {% with messages = get_flashed_messages() %}
@@ -105,48 +108,17 @@
         {% endblock %}
     </div>
 
-    <!--                Dating Apps                             -->
 
-    <section class="conainer" id="datingApps">
-
-        <h3>Dating Apps</h3>
-        <div class="row">
-
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="app">
-                    <a href="https://ie.match.com/?geo-redirection=www.match.com" target="_blank"><img
-                            src="static/img/img-match.jpg" alt="Match dating App"></a>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="app">
-                    <a href="https://tinder.com/" target="_blank"><img src="static/img/img-tinder.jpg"
-                            alt="Tinder dating App"></a>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="app">
-                    <a href="https://bumble.com/" target="_blank"><img src="static/img/img-bumble.jpg"
-                            alt="Bumble dating App"></a>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="app">
-                    <a href="https://www.eharmony.com" target="_blank"><img src="static/img/img-eharmony.jpg"
-                            alt="eharmany dating App"></a>
-                </div>
-
-            </div>
+    <!-- go to top button -->
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <a href="#top" class="go-to-top" aria-label="Click here to go to the top of the page">
+                <i class="fas fa-heart"></i>
+            </a>
         </div>
+    </div>
 
-    </section>
 
-    <!--               End Dating Apps                             -->
-
-    <div id="arrow"><a href="#top"><i class="fas fa-heart"></i></a></div>
     <!--                footer                     -->
 
     <footer>
@@ -157,16 +129,16 @@
                         <li><a href="https://github.com/EricGaona" target="_blank" rel="noopener"
                                 aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
                         </li>
-                        <li><a href="#" target="_blank" rel="noopener"
+                        <li><a href="https://github.com/EricGaona" target="_blank" rel="noopener"
                                 aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
                         </li>
-                        <li><a href="#" target="_blank" rel="noopener"
+                        <li><a href="https://github.com/EricGaona" target="_blank" rel="noopener"
                                 aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
                         </li>
-                        <li><a href="#" target="_blank" rel="noopener"
+                        <li><a href="https://github.com/EricGaona" target="_blank" rel="noopener"
                                 aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
                         </li>
-                        <li><a href="#" target="_blank" rel="noopener"
+                        <li><a href="https://github.com/EricGaona" target="_blank" rel="noopener"
                                 aria-label="Click here to go to our facebook page"><i class="fab fa-github"></i></a>
                         </li>
                     </ul>
@@ -192,11 +164,15 @@
 
     </footer>
 
+
+
     <!--                End of the footer                     -->
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
     {% endblock %}
+
 </body>
+
 
 </html>

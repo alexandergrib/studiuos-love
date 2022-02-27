@@ -1,15 +1,17 @@
 /*           Top Arrow              */
-$('#arrow').hide();
-var altura = $('header').outerHeight();
-var des = $(window).scrollTop();
-$(window).on('scroll', function () {
 
-    des = $(window).scrollTop();
+var height = $('header').outerHeight();
 
-    if (des > altura) {
-        $('#arrow').fadeIn();
-    } else {
-        $('#arrow').fadeOut();
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  
+    const goTopButton = document.querySelector(".go-to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > height) {
+            goTopButton.style.display = "flex";
+        } else {
+            goTopButton.style.display = "none";
+        }
+    });
 
 });
