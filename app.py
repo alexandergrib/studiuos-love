@@ -28,6 +28,7 @@ def index():
 def love_facts():
     return render_template("love_facts.html")
 
+
 @app.route("/topten")
 def topten():
     return render_template("topten.html")
@@ -43,13 +44,12 @@ def poetry():
             "text": request.form.get("text"),
             "copyright": request.form.get("copyright")
         }
-
         flash_text = "{} Successfully Created".format(
             submit["title"])
         flash(flash_text)
-        # mongo.db.poetry.insert_one(submit)
+        mongo.db.poetry.insert_one(submit)
         flash('flash_text')
-
+        return redirect(url_for('poetry'))
     return render_template("poems.html", poem_list=poem_list)
 
 
