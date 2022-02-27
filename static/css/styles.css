@@ -38,8 +38,12 @@ body {
     color: #faf2f0;
 }
 
+.nav-item {
+    padding: 0 1em;
 
-/*      masthead images      */
+}
+
+/*      images      */
 
 .masthead {
     /* background-image: url("../static/img/heart-cookies.jpg"); */
@@ -48,6 +52,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.col-md-5 img {
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 
@@ -93,7 +102,7 @@ body {
     padding-bottom: 20px;
 }
 
-.login {
+.login a {
     text-decoration: none;
 }
 
@@ -310,8 +319,7 @@ footer li:hover i {
 }
 
 .bold-carousel {
-    font-weight: 700;
-
+    font-weight: 7git pou00;
 }
 
 .shop-now{
