@@ -3,7 +3,7 @@
 body, html {
     height: 100%;
     margin: 0;
-}
+   }
 
 body {
     background-color: #ece5de;
@@ -198,8 +198,38 @@ footer li:hover i {
 .fa-heart {
     color: #B02B1A;
     font-size: 2.5rem;
+} 
+
+.go-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    opacity: 0.7;
+    transform: rotate(180deg);
 }
 
+.go-to-top:hover {
+    opacity: 1;
+}
+/*         carouselExampleControls         */
+
+#carouselExampleControls{
+    border: 3px solid red;
+    margin: 100px 0 40px;
+    max-height: 700px;
+}
+
+#carouselExampleControls img{
+    max-height: 700px;
 
 /*falling hearts*/
 .falling-hearts {
