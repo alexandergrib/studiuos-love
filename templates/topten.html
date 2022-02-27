@@ -4,9 +4,15 @@
 <title>Top Ten</title>
 {% endblock %}
 
+
+{% block header %}
+{% set image_link = url_for('static', filename='img/wedding.jpg') -%}
+<header class="masthead" style="background-image: url('{{ image_link }}'); width: 100%; height: 50%;">
+
+</header>
+{% endblock %}
+
 {% block content %}
-
-
 
 <div id="top-tens">
     <h1>Our Top 10's</h1>

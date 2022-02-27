@@ -207,6 +207,26 @@ body {
     text-align: end;
 }
 
+
+/*      login/register form      */
+.form {
+    margin: 5px 20px 10px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-2 {
+    margin: 5px 15px 10px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.submit {
+    width: 60px;
+    background-color: #cf145b;
+    color: #faf2f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 /*      footer      */
 
 footer {  
