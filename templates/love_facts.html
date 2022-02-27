@@ -1,16 +1,15 @@
 {% extends "base.html" %}
 
 {% block header %}
-{% set image_link = url_for('static', filename='img/hold-hands.jpg') -%}
-<header class="masthead" style="background-image: url('{{image_link}}'); width: 100%; height: 50%;">
+    {% set image_link = url_for('static', filename='img/hold-hands.jpg') -%}
+    <header class="masthead" style="background-image: url('{{ image_link }}'); width: 100%; height: 50%;">
 
-</header>
+    </header>
 {% endblock %}
 
 {% block content %}
-<h1 class="lrg-heading">A Few Facts on Love</h1>
+    <h1 class="lrg-heading">A Few Facts on Love</h1>
 
-<div>
     <div class="love-facts col-md-7">
         <h3 class="med-heading left">Love. What really hides behind this word?</h3>
         <p class="facts-p">Love often feels unexplainable, the most mysterious of force,
@@ -20,67 +19,64 @@
             taking place between the brain and the body.</p>
     </div>
     <div class="col-md-5">
+
         <img src="" alt="">
     </div>
-</div>
-
-<div>
     <div>
         <h3 class="med-heading right">Philosophy of Love</h3>
         <p class="facts-p">If scientists tend to portray love as something that can be more or less framed or defined,
             for the philosophers, as could be expected, this subject is more "blurred".
-            Internet Encyclopedia of Phylosophy states that:
+            Internet Encyclopedia of Philosophy states that:
             "..the question 'what is love?' generates a host of issues:
             love is an abstract noun which means for some it is a word unattached to anything real or sensible,
             that is all; for others, it is a means by which our being—our self and its world—are irrevocably affected
             once we are 'touched by love', some have sought to analyze it,
             others have preferred to leave it in the realm of the ineffable."</p>
+
+        <h3 class="med-heading left">Love in religion</h3>
+        <p class="facts-p">Although all religions emphasize the importance of Love of Deity, when it comes
+            to earthly relationships, religion holds a viewpoint too.
+            It stresses the importance of 'True Love' over the 'False (Materialistic) Love'
+            False Love (based on selfish motives and materialistic drives) is egocentric.
+            That which comes with looks goes with looks, easy come, easy go.
+            True Love on the other hand is based on spiritual and ethical basis.</p>
+
+        <h3 class="med-heading right">"The dark side"</h3>
+        <p>Although love is a powerful force with seemingly limitless potential, there are times
+            when Cupid's arrows are starting to miss the target.
+            And romantic flight of inseparable souls comes to a screeching halt.
+            In no time, sadness and depression knocks on the door.
+            However, according to "Psychology Today", there are methods that can make the healing process faster.</p>
+
+        <h3 class="med-heading left">Listen to sad music</h3>
+        <p class="facts-p">In the short term, it might reinforce or flare up painful memories,
+            but it also normalizes the grief you are feeling so that you know you're not alone.</p>
+
+        <h3 class="med-heading right">Meet new people</h3>
+        <p class="facts-p">While rebounding can be risky, it is OK when one feels ready — on average,
+            it takes people three to six months — to test the dating waters.
+            And actually, this is probably the quickest way to restore one’s feeling of being a viable mate.
+            The key is to take it slow and steady</p>
+
+        <h3 class="med-heading left">Treat yourself right</h3>
+        <p class="facts-p">Now is a fine time to do self-care rituals that, at other times, you might consider to be
+            unnecessary splurges.
+            Shop for clothes, accessories, or makeup. Get a new haircut. Nibble on some chocolate.
+            Anything that boosts your sense of yourself as someone worthy of comfort and pride.</p>
+
+        <h3 class="med-heading right">Talk to supportive people</h3>
+        <p class="facts-p">Family and friends can help, but make sure you recognize their limits as well.
+            You may decide that professional help from therapists may be more appropriate or useful,
+            and may provide a more neutral and long-lasting perspective.
+            They can also point out deeper patterns of behavior or thinking that a broken relationship
+            may be symptomatic or so that future relationships are healthier and happier.</p>
+
+        <h3 class="med-heading left">Take some time off and let it out</h3>
+        <p class="facts-p">It’s probably best not to suppress or hold back one’s emotions,
+            especially immediately after a breakup.
+            However, the emotions can be so intense that they may not be appropriate for public display,
+            so take time out, go somewhere private, and sob it out.
+            Yell it out. Scream it out. It’s normal.</p>
     </div>
-</div>
-        
-    <h3 class="med-heading left">Love in religion</h3>
-    <p class="facts-p">Although all religions ephasize the importance of Love of Deity, when it comes
-        to earthly relationships, religion holds a viewpoint too.
-        It stresses the importance of 'True Love' over the 'False (Materialistic) Love'
-        False Love (based on selfish motives and materialistic drives) is egocentric.
-        That which comes with looks goes with looks, easy come, easy go.
-        True Love on the other hand is based on spiritual and ethical basis.</p>
-
-    <h3 class="med-heading right">"The dark side"</h3>
-    <p>Although love is a powerful force with seemingly limitless potential, there are times
-        when Cupid's arrows are starting to miss the target.
-        And romantic flight of inseparable souls comes to a screeching halt.
-        In no time, sadness and depression knocks on the door.
-        However, according to "Psychology Today", there are methods that can make the healing process faster.</p>
-
-    <h3 class="med-heading left">Listen to sad music</h3>
-    <p class="facts-p">In the short term, it might reinforce or flare up painful memories,
-        but it also normalizes the grief you are feeling so that you know you're not alone.</p>
-
-    <h3 class="med-heading right">Meet new people</h3>
-    <p class="facts-p">While rebounding can be risky, it is OK when one feels ready — on average,
-        it takes people three to six months — to test the dating waters.
-        And actually, this is probably the quickest way to restore one’s feeling of being a viable mate.
-        The key is to take it slow and steady</p>
-
-    <h3 class="med-heading left">Treat yourself right</h3>
-    <p class="facts-p">Now is a fine time to do self-care rituals that, at other times, you might consider to be unnecessary splurges.
-        Shop for clothes, accessories, or makeup. Get a new haircut. Nibble on some chocolate.
-        Anything that boosts your sense of yourself as someone worthy of comfort and pride.</p>
-
-    <h3 class="med-heading right">Talk to supportive people</h3>
-    <p class="facts-p">Family and friends can help, but make sure you recognize their limits as well.
-        You may decide that professional help from therapists may be more appropriate or useful,
-        and may provide a more neutral and long-lasting perspective.
-        They can also point out deeper patterns of behavior or thinking that a broken relationship
-        may be symptomatic or so that future relationships are healthier and happier.</p>
-
-    <h3 class="med-heading left">Take some time off and let it out</h3>
-    <p class="facts-p">It’s probably best not to suppress or hold back one’s emotions,
-        especially immediately after a breakup.
-        However, the emotions can be so intense that they may not be appropriate for public display,
-        so take time out, go somewhere private, and sob it out.
-        Yell it out. Scream it out. It’s normal.</p>
-</div>
 
 {% endblock %}

@@ -16,7 +16,9 @@ body {
 .messages_block {
     padding-top: 75px;
 }
-
+.rounded-corners {
+    border-radius: 20px;
+}
 
 /*      navbar      */
 

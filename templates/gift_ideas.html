@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col text-end">
+            <img src="{{ url_for('static', filename='img/papa_johns_pizza.png') }}"
+                 class="rounded-corners"
+                 alt="Heart shaped pizza"
+                 aria-label="Image of the heart shaped papas john pizza" height="200">
+        </div>
+        <div class="col"><p>Papa Johns heart shaped pizza's</p></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col text-end"><p>Fine Dining Restuarants</p></div>
+        <div class="col">
+            <img src="{{ url_for('static', filename='img/jay-wennington-N_Y88TWmGwA-unsplash.jpg') }}"
+                 class="rounded-corners"
+                 alt="Heart shaped pizza"
+                 aria-label="Image of the heart shaped papas john pizza" height="200">
+        </div>
+    </div>
+{% endblock %}

@@ -53,6 +53,11 @@ def poetry():
     return render_template("poems.html", poem_list=poem_list)
 
 
+@app.route("/gifts")
+def gift_ideas():
+    return render_template("gift_ideas.html")
+
+
 # User section Login Logout Profile------------------------
 @app.route("/register", methods=["GET", "POST"])
 def register():
