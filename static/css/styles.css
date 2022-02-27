@@ -31,8 +31,9 @@ nav  {
     align-items: center;
 }
 
-.logo, .nav-link, .nav-item a {
+.navbar-brand, .nav-link, .nav-item a {
     color: #faf2f0;
+    text-decoration: none;
 }
 
 .navbar-toggler i {
@@ -43,8 +44,11 @@ nav  {
     padding: 0 1em;
 }
 
-
-
+@media screen and (max-width: 991px) {
+    .collapse ul {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
 
 /*      images      */
 
@@ -181,6 +185,10 @@ nav  {
 
 .text-end {
     text-align: end;
+}
+
+#author {
+    color: #871d39;
 }
 
 .inner_item {
@@ -399,8 +407,12 @@ footer li:hover i {
 
 /* new poems inputs*/
 
-span .add-poem {
-
+.add-poem {
+    background-color: #871d39;
+    color: #ece5de;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
 }
 
 .submit_poem form {
@@ -436,12 +448,10 @@ span .add-poem {
     max-height: 300px;
     
 }
-#top-ten1 h2, span{
-    color: #FFF;
-}
-#top-ten2 h2, span{
+.white{
     color: #FFF !important;
 }
+
 #top-ten1 span{
     display: block;
      text-align: center !important;
