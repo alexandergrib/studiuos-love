@@ -1,16 +1,25 @@
 {% extends "base.html" %}
 
+{% block header %}
+{% set image_link =  url_for('static', filename='img/couple-picnic.jpg')  -%}
+<header class="masthead" style="background-image: url('{{image_link}}'); width: 100%; height: 50%;">
+    
+</header>
+{% endblock %}
+
+
 {% block content %}
-    <h3 class="center-align">Register</h3>
+    <h3 class="med-heading center padding">Register</h3>
 
     <div class="row">
+        <div class="col"></div>
         <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
             <div class="card-panel">
 
                 <!-- username -->
                 <div class="row">
-					<div class="input-field col s12">
-						<i class="fas fa-user-plus prefix light-blue-text text-darken-1"></i>
+					<div class="input-field form-2 col s12">
+						<i class="fas fa-user-cog prefix light-blue-text text-darken-1"></i>
 						<input id="username" name="username" type="text" minlength="3"
                             maxlength="15" pattern="^[a-zA-Z0-9]{3,15}$" class="validate" required>
 						<label for="username">Username</label>
@@ -19,7 +28,7 @@
 
                 <!-- password -->
                 <div class="row">
-                    <div class="input-field col s12">
+                    <div class="input-field form-2 col s12">
 						<i class="fas fa-user-lock prefix light-blue-text text-darken-1"></i>
                         <input id="password" name="password" type="password" minlength="5"
                             maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
@@ -29,12 +38,13 @@
 
                 <!-- register -->
                 <div class="row">
-                    <button type="submit" class="col s12 btn-large light-blue darken-1 text-shadow">
+                    <button type="submit" class="col s12 btn-large light-blue darken-1 text-shadow submit">
                         Register <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>
             </div>
         </form>
+        <div class="col"></div>
     </div>
 
     <div class="row">
