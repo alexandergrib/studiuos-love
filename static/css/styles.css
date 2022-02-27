@@ -55,6 +55,7 @@ body {
 
 .welcome {
     text-align: center;
+    font-size: 50px;
     color: #b12b0a;
     margin-top: 20px;
     font-family: 'Dancing Script', sans-serif;
@@ -82,15 +83,28 @@ body {
     text-align: right;
 }
 
+.center {
+    text-align: center;
+}
+
 .facts-p {
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 20px;
 }
 
+.login {
+    text-decoration: none;
+}
+
 .justify-right {
     text-align: right;
 
+}
+
+.padding {
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 
@@ -103,12 +117,12 @@ body {
     color: #faf2f0;
 }
 
-.image-div-1 img { 
+.image-1 img { 
     width: auto; 
     height: 100%;
 }
 
-.image-div-2 img { 
+.image-2 img { 
     width: auto; 
     height: 100%;
 }
@@ -122,7 +136,7 @@ body {
     display: flex;
     align-self: flex-end;
     margin-bottom: 30px;
-    margin-right: 30px;
+    margin-left: 25px;
 }
 
 
@@ -136,13 +150,9 @@ body {
 #datingApps {
     background-color: #ECE5DE;
     text-align: center;
-    padding: 35px 0px;
+    padding: 20px 0px 30px;
     display: block;
 
-}
-
-#datingApps h3 {
-    margin: 20px 0;
 }
 
 #datingApps img {
@@ -296,8 +306,14 @@ footer li:hover i {
 }
 #carousel2{
     text-align: center;
-    margin: 80px 0 10px;
+    margin: 40px 0;
 }
+
+.bold-carousel {
+    font-weight: 700;
+
+}
+
 .shop-now{
     text-decoration: none;
     padding: 5px;

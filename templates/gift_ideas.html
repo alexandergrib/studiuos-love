@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
 
+{% block header %}
+    {% set image_link = url_for('static', filename='img/red-rose.jpg') -%}
+    <header class="masthead" style="background-image: url('{{ image_link }}'); width: 100%; height: 50%;">
+
+    </header>
+{% endblock %}
+
+
 {% block content %}
     <div class="gifts_container">
         <div class="row mt-2 pt-2">

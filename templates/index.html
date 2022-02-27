@@ -13,61 +13,67 @@
 <h1 class="welcome">
     Welcome {{ session.user }}!
 </h1>
-
-<hr>
-
-<div class="row justify-content-md-center">
-    <div class="col-md-5 card">
-        <div class="card-body content content-1">
-            <h3>Top 10 Romantic Locations</h3>
-            <p class="large-main-text">Have a look at some of Ireland's most beautiful and romantic spots.</p>
-        </div>
-        <div class="image-div">
-            {% set card_image_1 = url_for('static', filename='img/couple-picnic.jpg') -%}
-            <img src="{{card_image_1}}" alt="Image of a couple together on a balcony">
-        </div>
-    </div>
-    <div class="col-md-5 card">
-        <div class="card-body content content-1">
-            <h3>Romantic Poetry</h3>
-            <p class="large-main-text">Check out some amazing poetry that's sure to woo anyone. Why not write your own
-                also!</p>
-        </div>
-        <div class="image-div">
-            {% set card_image_2 = url_for('static', filename='img/bouquet.jpg') -%}
-            <img src="{{card_image_2}}" alt="Image of a couple together on a balcony">
-        </div>
-        
-    </div>
-</div>
-
 {% else %}
 
 {% endif %}
 
+<hr>
+
+<h3 class="center med-heading padding">Check this out!</h3>
+
+<div class="row justify-content-md-center">
+    <div class="col-md-5 card">
+        <div class="card-body">
+            <h3>Top 10 Romantic Locations</h3>
+            <p class="large-main-text">Have a look at some of Ireland's most beautiful and romantic spots.</p>
+        </div>
+        <a href="" class="link">
+            <div class="image-div">
+                {% set card_image_1 = url_for('static', filename='img/couple-picnic.jpg') -%}
+                <img class="image-1" src="{{card_image_1}}" alt="Image of a couple together on a balcony">
+            </div>
+        </a>
+    </div>
+    <div class="col-md-5 card">
+        <div class="card-body">
+            <h3>Romantic Poetry</h3>
+            <p class="large-main-text">Check out some amazing poetry that's sure to woo anyone. Why not write your own
+                also!</p>
+        </div>
+        <a href="" class="link">
+            <div class="image-div">
+                {% set card_image_2 = url_for('static', filename='img/bouquet.jpg') -%}
+                <img class="image-2" src="{{card_image_2}}" alt="Image of a couple together on a balcony">
+            </div>
+        </a>
+    </div>
+</div>
+
+<hr>
+
 <!--                 Carousel               -->
-<h3 id="carousel2">Gifts for your loved one</h3>
+<h3 class="med-heading center" id="carousel2">Gifts for your loved one</h3>
 <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
     <div class="carousel-inner">
         <div class="carousel-item active" data-mdb-interval="10">
             <img class="d-block w-100" src="static/img/gits-butlers.jpg" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
-                <h4>Butlers</h4>
+                <h4 class="bold-carousel">Butlers</h4>
                 <a href="https://www.butlerschocolates.com/" class="shop-now" target="_blank">Shop now</a>
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="static/img/gits-flowers.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
-                <h4>Interflora</h4>
+                <h4 class="bold-carousel">Interflora</h4>
                 <a href="https://www.interflora.ie/" class="shop-now" target="_blank">Shop now</a>
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="static/img/gifts-gifts.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
-                <h4>Gifts</h4>
+                <h4 class="bold-carousel">Gifts</h4>
                 <a href="https://www.gifts.ie/" class="shop-now" target="_blank">Shop now</a>
             </div>
         </div>
@@ -84,12 +90,13 @@
 
 <!--               End Carousel               -->
 
+<hr>
 
 <!--                Dating Apps                             -->
 
 <section class="conainer" id="datingApps">
 
-    <h3>Dating Apps</h3>
+    <h3 class="med-heading center">Dating Apps</h3>
     <div class="row">
 
         <div class="col-sm-12 col-md-6 col-lg-3">
