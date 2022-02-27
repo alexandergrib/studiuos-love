@@ -43,8 +43,11 @@ nav  {
     padding: 0 1em;
 }
 
-
-
+@media screen and (max-width: 991px) {
+    .collapse ul {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
 
 /*      images      */
 
@@ -180,7 +183,10 @@ nav  {
 
 .text-end {
     text-align: end;
+    color: #871d39;
 }
+
+.author
 
 .inner_item {
     width: 70%;
