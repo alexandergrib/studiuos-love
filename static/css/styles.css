@@ -13,12 +13,15 @@ body {
 .hide {
     display: none;
 }
+
+
 /*      navbar      */
 
 #topnav {
     background-color: #871d39;
     width: 100%;
     position: fixed;
+    z-index: 999;
 }
 
 .navbar-nav {
@@ -59,17 +62,32 @@ body {
 
 /*      cards      */
 
-.card-image {
-    height: 200px;
-    width: 200px;
-    padding-left: 20px;
-    padding-bottom: 30px;
-    padding-right: 20px;
-    border-radius: 50%;
+.card {
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #cf145b;
+    color: #faf2f0;
 }
 
-.card-body {
-    width: 60%;
+.image-div-1 img { 
+    width: 100%; 
+    height: 100%;
+}
+
+.image-div-2 img { 
+    width: 100%; 
+    height: 100%;
+}
+
+.image-div {
+    display: inline-block; 
+    width: 100%; 
+    height: 150px; 
+    overflow: hidden; 
+    border-radius: 20px;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 30px;
 }
 
 
