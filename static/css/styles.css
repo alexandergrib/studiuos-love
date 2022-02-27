@@ -393,3 +393,22 @@ footer li:hover i {
 .gifts_container {
     margin: 0 auto;
 }
+/*       top-tens       */
+
+#top-tens h2{
+   color: #871D39;
+   text-align: center;
+   margin: 30px 0;
+}
+#top-ten1{
+    background-color: #CF415B;
+    padding-top: 50px ;
+    max-height: 250px;
+}
+#testing{
+    background-color: black;
+}
+#top-ten1 span{
+    display: block;
+     text-align: center !important;
+}
