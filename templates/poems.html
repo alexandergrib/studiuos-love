@@ -84,24 +84,20 @@
         <div class="new-poem_button text-uppercase text-center mt-5">
             <span class="add-poem">Add new poem</span>
         </div>
+            <!-- Form would need  more backend  validation -->
         <div class="submit_poem input-group mt-2 hide">
             <form action="{{ url_for('poetry') }}" method="post">
                 <div class="input-group mt-2">
-{#                    <label for="author" class="" >Author</label>#}
-                    <input type="text" name="author" id="author" placeholder="Author" aria-label="Poem Author">
+                    <input type="text" name="author" id="author" placeholder="Author" aria-label="Poem Author" required aria-required="true" maxlength="128">
                 </div>
                 <div class="input-group mt-2" >
-{#                    <label for="title" class=""> Poem Title</label>#}
-                    <input type="text" name="title" id="title" placeholder="Poem title" aria-label="Poem title">
+                    <input type="text" name="title" id="title" placeholder="Poem title" aria-label="Poem title" required aria-required="true" maxlength="128">
                 </div>
                 <div class="input-group mt-2">
-{#                    <label for="textarea" class="">Poem text</label>#}
-
-                    <textarea id="textarea" name="text" cols="50" placeholder="Poem text" aria-label="Textarea for Poem"></textarea>
+                    <textarea id="textarea" name="text" cols="50" placeholder="Poem text" aria-label="Textarea for Poem" required aria-required="true" maxlength="10280"></textarea>
                 </div>
                 <div class="input-group mt-2">
-                    <input type="text" name="copyright" id="copyright" placeholder="Poem copyright" aria-label="Poem copyright">
-
+                    <input type="text" name="copyright" id="copyright" placeholder="Poem copyright" aria-label="Poem copyright" maxlength="512">
                 </div>
                 <div class="input-group mt-2">
                     <input type="submit">
