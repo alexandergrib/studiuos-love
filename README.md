@@ -1,5 +1,5 @@
 # studio-love💞
-![studio-love](https://github.com/alexandergrib/studiuos-love/tree/main/static/img/amIres.JPG "studio-love")
+![studio-love](https://github.com/alexandergrib/studiuos-love/blob/main/static/img/amIres.JPG "studio-love")
 
 <span id="project"></span>
 ## [Code Institute](https://codeinstitute.net)
@@ -128,16 +128,16 @@ Pages shall remain responsive and keep the same format on all screen sizes. Pict
 
 #### Font Style - Dancing Script
 Google fonts
-![Font Style - Dancing Script](https://github.com/alexandergrib/studiuos-love/tree/main/static/img/dancingFont.JPG "Font Style")
+![Font Style - Dancing Script](https://github.com/alexandergrib/studiuos-love/blob/main/static/img/dancingFont.JPG "Font Style")
 
 #### Color Scheme
 Adobe color tools
-![Color Scheme](https://github.com/alexandergrib/studiuos-love/tree/main/static/img/colour.jpg "Color Scheme")
+![Color Scheme](https://github.com/alexandergrib/studiuos-love/blob/main/static/img/colour.jpg "Color Scheme")
 
 #### Wireframes
 Balsamiq wireframes
 
-![Wireframes](https://github.com/alexandergrib/studiuos-love/tree/main/static/img/wire.JPG "Wireframes")
+![Wireframes](https://github.com/alexandergrib/studiuos-love/blob/main/static/img/wire.JPG "Wireframes")
 
 
 <a href="#index">Back to top ☝️ </a>
