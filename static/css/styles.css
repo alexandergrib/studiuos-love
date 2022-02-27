@@ -31,19 +31,17 @@ nav  {
     align-items: center;
 }
 
-.navbar-brand, .nav-item a {
+.logo, .nav-link, .nav-item a {
     color: #faf2f0;
 }
 
-.navbar-toggler {
+.navbar-toggler i {
     color: #faf2f0;
 }
 
 .nav-item {
     padding: 0 1em;
-
 }
-
 
 
 
@@ -236,7 +234,7 @@ nav  {
 
 /*      footer      */
 
-footer {  
+footer {
     text-align: center;
     bottom: 0px;
     left: 0px;
@@ -399,6 +397,10 @@ footer li:hover i {
 }
 
 /* new poems inputs*/
+
+span .add-poem {
+
+}
 
 .submit_poem form {
     margin: 0 auto;
