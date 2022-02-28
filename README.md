@@ -94,7 +94,7 @@ Love Facts page has another attractive image of a couple holding hands. Facts ar
 
 Poetry page is decorated with an open book image. Poetry is displayed in carousel. Each element contains a name, written by and text. Some elements also contain pop-up text with copyright information.
 
-Top ten page is divided into three sections - romantic movies, places and quotes. Each element is numbered and text is enlarged for easier readability on mouse hover.
+Top ten page is divided into three sections - romantic movies, places and quotes. Each element is numbered and placed into a colour matching carousel.
 
 Gift ideas page contains large red rose image. Ideas are again separated into sections and decorated with pictures.
 
@@ -145,3 +145,95 @@ Balsamiq wireframes
 
 # 2. Features 💔
 ## 2.1 Implemented features
+
+Most features were sucesfully implemented. 
+
+There is consistent header and footer with appropriate links throughout all pages. Appealing pages with facts about love, poetry, gift ideas and ten top's were created with responsive desing for smaler screens.
+User's can also register and login/logout to create their profiles and access added functions which might be added later.
+
+Home page is divided into four parts. The top part is displaying appealing hero image to grab users attention. Second - Check this out - a shortcut to suggest user what's not to be missed and to stay on a page. Third one promotes an online shop. This is also for best user experience. Last section is for people who came to find the right person and displays links for most popular dating services.
+
+Love facts page has another hero image and provides people with information to uncover the love, to see the aspects of a true love but also to see the dark and sad side of the love. It also provides hints how to meet people, how to treat them and how to raise self-awareness. For easier readability text is broken down into paragraphs and associated pitures.
+
+Top ten page display nice wedding picture and three carousels with corresponding topics - movies, places to help visitor how to spend a time togetger and famous quotes to help understand the love little bit better.
+
+Gift Ideas page has satysfying red rose hero image. There are five articles. Four of them offers another view to more gits as heart shaped pizza or delicious chocolate box or stunning flowers. Link to same gift store is provided for visitors who could have missed this on a home page.
+
+Login and register pages provides access to user account and its funcionality.
+
+## 2.2 To be implemented
+
+Few more features will be implemented as a quotes and poetry search. Registered users also could have the option to like certain poetry.
+However this features are not necessary for Minimum Viable Product.
+
+<a href="#index">Back to top ☝️ </a>
+<span id="technologies"></span>
+
+# 3. Technologies Used 😘
+
+## 3.1 Languages
+
+- HTML/HTML5
+Each web page was built using HTML elements.
+
+- CSS
+Some HTML elements were styled using CSS
+
+- Python
+This app was build using python based framework Django and its packages.
+Crispy Forms - library for python to work fast and efficiently with forms.
+
+## 3.2 Other libraries and frameworks
+
+- Bootstrap 5
+Navbar, Footer and some other elements were implemented using this popular library.
+
+## 3.3 IDE, Version control and hosting
+
+- GitPod
+Collaborative development environments in browser
+
+- Git and GitHub
+Version control and repository
+
+- Heroku
+GitHub repository was linked with Heroku and is hosted here
+
+- Flask
+Python based framework for easy and powerfull web development
+
+MongoDB
+- open source RDBMS used in deployed version
+
+
+## 3.4 Other tools
+
+- Balsamiq was used to create wireframes
+
+- Adobe Color was used to identify the colour scheme
+
+- Am I Responsive was used to create title image for readme.md
+
+- Chrome Devtools were used to see the behaviour of the elements and their style
+
+<a href="#index">Back to top 💏 </a>
+<span id="testing"></span>
+
+# 4. Testing 💉
+
+## 4.1 Validation
+
+HTML code was checked in W3C validator with no errors - https://validator.w3.org/
+
+CSS code was checked in W3C validator with no errors - https://jigsaw.w3.org/css-validator/
+
+JS code was checked in BeautifyTools with no errors - http://beautifytools.com/javascript-validator.php
+
+Python code was checked in pep8 online and errors were fixed. White spaces at the end of lines, and lines with non compliant lenght were the only issues.  - https://pep8online.com/
+
+Responsivness was tested in Chrome and Firefox on Win10 with Devtools, ipad mini 6th gen, onePlus 7pro phone and Am I Responsive website. Iphone 5 was used in Devtools as standard for smallest screen. Bootstrap Display properties, Grid system and CSS media queries were used to adapt responsive layout.
+
+## 4.2 Features testing
+
+Tests were completed on iPhone5, iPad and 1200px screen sizes. 
+
