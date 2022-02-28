@@ -215,10 +215,10 @@ MongoDB
 
 - Chrome Devtools were used to see the behaviour of the elements and their style
 
-<a href="#index">Back to top 💏 </a>
+<a href="#index">Back to top ☝️ </a>
 <span id="testing"></span>
 
-# 4. Testing 💉
+# 4. Testing 💏
 
 ## 4.1 Validation
 
