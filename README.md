@@ -180,8 +180,7 @@ Each web page was built using HTML elements.
 Some HTML elements were styled using CSS
 
 - Python
-This app was build using python based framework Django and its packages.
-Crispy Forms - library for python to work fast and efficiently with forms.
+This app was build using python based framework Python and its packages.
 
 ## 3.2 Other libraries and frameworks
 
@@ -308,7 +307,17 @@ A big thank belongs to:
 ## 6.1 References
 
 - Pictures
-    https://www.pexels.com/photo/cheeseburger-on-table-2089717/
-
+    https://www.pexels.com/
+    https://www.pixabay.com/
+    
 - Fonts
     https://fonts.google.com/
+
+- Top Places
+    https://www.wildernessireland.com/blog/most-romantic-places-in-ireland/
+
+- Top Quotes
+    https://nosweatshakespeare.com/quotes/literature/love-proverbs/
+
+- Top Movies
+    https://www.theguardian.com/film/filmblog/2013/oct/07/top-10-romantic-movies
