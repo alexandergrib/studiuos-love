@@ -484,18 +484,18 @@ footer li:hover i {
 #top-tens1, #top-tens2, #top-tens3{
     margin-top: 100px;
 }
-
-/* .image-div{
-    display: block !important;
-    width: 80% !important;
-    text-align: center !important;
-    
+.card-body > h3{    
+    color: #fff;
 }
-.card img{
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
-} */
+.card-body > p{    
+    color: #fff;
+}
+#my-carousel-h4 h4{
+    color: black;
+    font-size: 48px;
+    font-weight: 800;
+    text-shadow: -2px -2px #FFF;
+}
  @media(max-width:670px) {
     #top-ten1, #top-ten2{      
         max-height: 310px;
