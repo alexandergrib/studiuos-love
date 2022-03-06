@@ -1,4 +1,5 @@
 import os
+import json
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -31,7 +32,19 @@ def love_facts():
 
 @app.route("/topten")
 def topten():
-    return render_template("topten.html")
+    data1 = []
+    with open("data/RomanticMovies.json", "r") as json_data1:
+        data1 = json.load(json_data1)
+
+    data2 = []
+    with open("data/RomanticPlaces.json", "r") as json_data2:
+        data2 = json.load(json_data2)
+
+    data3 = []
+    with open("data/RomanticQuotes.json", "r") as json_data3:
+        data3 = json.load(json_data3)
+
+    return render_template("topten.html", movies=data1, places=data2, quotes=data3)
 
 
 @app.route("/poetry", methods=['GET', 'POST'])
