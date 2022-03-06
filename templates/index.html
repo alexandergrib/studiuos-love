@@ -15,11 +15,10 @@
 {% block content %}
 {% if session.user %}
 <h1 class="welcome">
-    Welcome {{ session.user }}!
-    
+    Welcome {{ session.user.title() }}!
 </h1>
 {% else %}
-<h2>registrate para agregar tu poema</h2>
+<!-- <h2>registrate para agregar tu poema</h2> -->
 
 {% endif %}
 
@@ -28,7 +27,7 @@
 <h3 class="center med-heading padding">Check this out!</h3>
 
 <div class="row justify-content-md-center">
-    <div class="col-md-5 card">
+    <div class="col-md-5 card mx-auto">
         <div class="card-body">
             <h3>Top 10 Romantic Locations</h3>
             <p class="large-main-text">Have a look at some of Ireland's most beautiful and romantic spots.</p>
@@ -40,7 +39,7 @@
             </div>
         </a>
     </div>
-    <div class="col-md-5 card">
+    <div class="col-md-5 card mx-auto">
         <div class="card-body">
             <h3>Romantic Poetry</h3>
             <p class="large-main-text">Check out some amazing poetry that's sure to woo anyone. Why not write your own
