@@ -1,0 +1,52 @@
+[
+    {
+        "title": "10. Jules et Jim",
+        "description": "Jules et Jim was the biggest box-office success the French New Wave ever enjoyed. When it opened in Paris in January 1962, it played for nearly three months and it found the same crowds all over the world.",
+        "id": 10
+    },
+    {
+        "title": "9. A Room With a View",
+        "description": "This is incredibly fresh and arresting film-making: moving and amusing, swooningly romantic and socially ferocious – nothing less than a full-frontal (in every way) assault on your soul.",
+        "id": 9
+    },
+    {
+        "title": "8. ETERNAL SUNSHINE OF THE SPOTLESS MIND",
+        "description": "The film's concept is that a couple can delete each other after a painful break-up so they can live on in blissful ignorance.",
+        "id": 8
+    },
+    {
+        "title": "7. HANNAH AND HER SISTERS",
+        "description": "This 1986 roundelay grossed $40m and became Woody Allen's biggest ever box-office hit.",
+        "id": 7
+    },
+    {
+        "title": "6. THE APARTMENT",
+        "description": "It won five Academy Awards, including best picture, the best director and best screenplay.",
+        "id": 6
+    },
+    {
+        "title": "5. IN THE MOOD FOR LOVE",
+        "description": "It is often listed as one of the greatest films of all time and one of the major works of Asian cinema.",
+        "id": 5
+    },
+    {
+        "title": "4. BREATHLESS (A BOUT DE SOUFFLE)",
+        "description": "Upon its initial release in France, the film attracted over two million viewers. It has since become considered one of the best films ever made.",
+        "id": 4
+    },
+    {
+        "title": "3. BEFORE SUNRISE/BEFORE SUNSET/BEFORE MIDNIGHT",
+        "description": "The Before trilogy received widespread critical acclaim, nominated for two Academy Awards, two Writers Guild of America Awards, and the Golden Globe Award for Best Actress",
+        "id": 3
+    },
+    {
+        "title": "2. CASABLANCA",
+        "description": "Casablanca stands for movie romance in great part because it is hardly true to life.",
+        "id": 2
+    },
+    {
+        "title": "1. BRIEF ENCOUNTER",
+        "description": "Brief Encounter is etched in nostalgia for an era when trapped middle-class lives contemplated adultery but set the disturbing thought aside.",
+        "id": 1
+    }
+]
